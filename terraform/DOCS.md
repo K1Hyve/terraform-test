@@ -17,12 +17,14 @@ This Terraform setup provisions a VPC with public and private subnets, EC2 insta
 
 ## Known issues
 
-Due to networking misconfiguration instances can't make egress connection to the internet. In order to have a web server the workaround has been using an AMI that required applications preinstalled.
+- Due to networking misconfiguration instances can't make egress connection to the internet. In order to have a web server the workaround has been using an AMI that required applications preinstalled.
+- Home page of the web server shows Bitnami landing page and not hostname of the instance which received the request.
 
 ## To Do
 
 - Fix egress connection
 - Customize autoscaling configuration
 - Improve documentation
+- Enable TLS
 - Add Session manager
 - Add WAF

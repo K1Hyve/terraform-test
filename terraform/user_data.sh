@@ -19,4 +19,4 @@
 # sudo apt update
 # sudo apt install -y libapache2-mod-php8.1
 
-echo "<?php phpinfo(); ?>" | sudo tee /var/www/html/index.php
+echo "<?php phpinfo(); ?>" | sudo tee /opt/bitnami/apache/htdocs/index.php
